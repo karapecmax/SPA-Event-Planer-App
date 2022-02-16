@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BtoBet</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section id="event-preview">
+      <div class="topnav" id="myTopnav">
+        
+        <a id=" add" onclick="addEventButton()" href="#add">Add</a>
+        <a id=" logout" href="#logout" onclick="logOut()" >Log out</a>
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div id="addEvent">
+        <form action="" method="post" >
+            <input
+              id="eventname"
+              type="text"
+              name="user-name"
+              
+              placeholder="User Name"
+            />
+            <input
+              id="eventdate"
+              type="date"
+              name="eventDate"
+              
+            />
+            <input
+              id="eventdescription"
+              type="text"
+              name="eventDesc"
+              
+              placeholder="description"
+            />
+            <input
+              onclick="addEventPage()"
+              type="button"
+              name="login-btn"
+              class="btn"
+              value="Add"
+            />
+            
+          </form>
+
+      </div>
+      <div class="event_container">
+        
+      </div> 
+    </section>
+
+    <section class="left-section">
+      <div id="left-form" class="form fade-in-element">
+        <h1>Login</h1>
+        <h4 id="error-span">Wrong credentials</h4>
+        <form action="" method="post">
+          <input
+            id="uname-login"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="User Name"
+          />
+          <input
+            id="pass-login"
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="Password"
+          />
+          <input
+            onclick="LoginForm()"
+            type="button"
+            name="login-btn"
+            class="btn"
+            value="Login"
+          />
+          <h3>Don't have an account ?</h3>
+          <button type="button" class="switch-btn" onclick="Signup()">
+            Signup
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="right-section">
+      <div id="right-form" class="form form-hide">
+        <h1>Signup</h1>
+        <form action="" method="post">
+          <input
+            id="fname"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="First Name"
+          />
+          <input
+            id="lname"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="Last Name"
+          />
+          <input
+            id="uname"
+            type="text"
+            name="user-name"
+            class="input-box"
+            placeholder="UserName"
+          />
+          <input
+            id="email"
+            type="uname"
+            name="user-email"
+            class="input-box"
+            placeholder="Email"
+          />
+          <input
+            id="pass"
+            type="password"
+            name="user-pass"
+            class="input-box"
+            placeholder="Password"
+          />
+          <input
+            id="pass2"
+            type="password"
+            name="user-cpass"
+            class="input-box"
+            placeholder="Confirm Password"
+          />
+          <input
+            type="button"
+            onclick="SignupForm()"
+            name="signup-btn"
+            class="btn"
+            value="Signup"
+          />
+          <h3>Already have an account?</h3>
+          <button type="button" class="switch-btn" onclick="location.reload()">
+            Login
+          </button>
+        </form>
+      </div>
+    </section>
+    <script src="js/addEventButton.js"></script>
+    <script src="js/logOut.js"></script>
+    <script src="js/addEventPage.js"></script>
+    <script src="js/loginForm.js"></script>
+    <script src="js/signUpForm.js"></script>
+    <script src="js/signUp.js"></script>
+  </body>
+</html>
